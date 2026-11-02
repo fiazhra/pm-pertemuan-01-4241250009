@@ -30,20 +30,29 @@ class HelloPage extends StatelessWidget {
         title: const Text('Pemrograman Mobile'),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            FlutterLogo(size: 96),
-            SizedBox(height: 24),
-            Text(
+            const FlutterLogo(size: 96),
+            const SizedBox(height: 24),
+            const Text(
               'Hello, World!',
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
-            Text('Nama : Sofia Zahra'),
-            Text('NIM : 421250009'),
-            Text('Kelas : Ilmu Komputer A 2024'),
+            const SizedBox(height: 8),
+            const Text('Nama : Sofia Zahra'),
+            const Text('NIM : 4241250009'),
+            const Text('Kelas : PSIK 24C'),
+            const SizedBox(height: 20),
+            // Widget tambahan pilihan: ElevatedButton & Icon
+            ElevatedButton.icon(
+              onPressed: () {
+                // Aksi saat tombol ditekan
+              },
+              icon: const Icon(Icons.check_circle),
+              label: const Text('Tugas Selesai'),
+            ),
           ],
         ),
       ),
